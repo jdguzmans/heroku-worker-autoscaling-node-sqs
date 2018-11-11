@@ -44,6 +44,7 @@ const router = express.Router()
 
 router.get('/', async (req, res, next) => {
   for (let i = 0; i < 1; i++) {
+    console.log(process.env.AWS_QUEUE_URL)
     // await queueMessage()
   }
   res.sendStatus(200)

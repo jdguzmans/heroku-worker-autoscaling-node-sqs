@@ -6,6 +6,7 @@ AWS.config.update({ region: 'us-east-1' })
 const sqs = new AWS.SQS({ apiVersion: '2012-11-05' })
 
 const receiveMessages = () => {
+  console.log(process.env.AWS_QUEUE_URL)
   return new Promise((resolve, reject) => {
     const params = {
       MaxNumberOfMessages: 2,
