@@ -44,7 +44,7 @@ const router = express.Router()
 
 router.get('/', async (req, res, next) => {
   for (let i = 0; i < 1; i++) {
-    await queueMessage()
+    // await queueMessage()
   }
   res.sendStatus(200)
 })
