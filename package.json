@@ -4,8 +4,8 @@
   "description": "Autoscaling workers in Heroku with SQS in NodeJS projects.",
   "main": "index.js",
   "scripts": {
-    "web": "cd back && npm start",
-    "worker": "cd worker && npm start"
+    "web": "cd back && npm install && npm start",
+    "worker": "cd worker && npm install && npm start"
   },
   "repository": {
     "type": "git",
